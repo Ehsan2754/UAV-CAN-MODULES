@@ -32,6 +32,8 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define SIDECOLOR 0xff0000
+#define MAINCOLOR 0x0000ff
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -54,25 +56,22 @@ static void MX_DMA_Init(void);
 static void MX_TIM4_Init(void);
 /* USER CODE BEGIN PFP */
 
-
-
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 Leds_Color_t colors;
 const uint32_t RGB_PALLET[MAX_NUM_OF_LEDS] = {
-/*
- *    1		2		   3		4	    	5		6		7			8		9			10		11			12		  13		14		  15 		16
+    /*
+ *      1	      	2		     3		      4	       	5	      	6	      	7		    	8	      	9		    	10	    11	  	   	12	 	  13	    	14		     15 	    	16
  */
 
-0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0x28d5ff, 0x28b1ff, 0x285dff, 0x4828ff, 0x9c28ff, 0xf028ff, 0xff28cb, 0xff2877, 0xc1c1c1,//0
-0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0x28d5ff, 0x28b1ff, 0x285dff, 0x4828ff, 0x9c28ff, 0xf028ff, 0xff28cb, 0xff2877, 0xc1c1c1,//1
-0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0x28d5ff, 0x28b1ff, 0x285dff, 0x4828ff, 0x9c28ff, 0xf028ff, 0xff28cb, 0xff2877, 0xc1c1c1,//2
-0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0x28d5ff, 0x28b1ff, 0x285dff, 0x4828ff, 0x9c28ff, 0xf028ff, 0xff28cb, 0xff2877, 0xc1c1c1,//3
-0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0xff0000, 0x28d5ff, 0x28b1ff, 0x285dff, 0x4828ff, 0x9c28ff, 0xf028ff, 0xff28cb, 0xff2877, 0xc1c1c1 //4
+    SIDECOLOR, SIDECOLOR, SIDECOLOR, SIDECOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, //0
+    SIDECOLOR, SIDECOLOR, SIDECOLOR, SIDECOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, //1
+    SIDECOLOR, SIDECOLOR, SIDECOLOR, SIDECOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, //2
+    SIDECOLOR, SIDECOLOR, SIDECOLOR, SIDECOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, //3
+    SIDECOLOR, SIDECOLOR, SIDECOLOR, SIDECOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR, MAINCOLOR  //4
 };
-
 /* USER CODE END 0 */
 
 /**
@@ -106,45 +105,48 @@ int main(void)
   MX_DMA_Init();
   MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
-  for (int var = 0; var < MAX_NUM_OF_LEDS; ++var) {
-//	if((var%16)<4){
-//	  	colors.colors[var].shades.red   = (uint8_t)((0xff0000 & 0xff0000)>>16);
-//	  	colors.colors[var].shades.green = (uint8_t)((0x00ff00 & 0xff0000)>>8);
-//	  	colors.colors[var].shades.blue  = (uint8_t)((0x0000ff & 0xff0000));
-//	}
-//	else
+  for (int var = 0; var < MAX_NUM_OF_LEDS; ++var)
+  {
+    //	if((var%16)<4){
+    //	  	colors.colors[var].shades.red   = (uint8_t)((0xff0000 & 0xff0000)>>16);
+    //	  	colors.colors[var].shades.green = (uint8_t)((0x00ff00 & 0xff0000)>>8);
+    //	  	colors.colors[var].shades.blue  = (uint8_t)((0x0000ff & 0xff0000));
+    //	}
+    //	else
 
-  	colors.colors[var].shades.red   = (uint8_t)((0xff0000 & RGB_PALLET[var])>>16);
-  	colors.colors[var].shades.green = (uint8_t)((0x00ff00 & RGB_PALLET[var])>>8);
-  	colors.colors[var].shades.blue  = (uint8_t)((0x0000ff & RGB_PALLET[var]));
-
+    colors.colors[var].shades.red = (uint8_t)((0xff0000 & RGB_PALLET[var]) >> 16);
+    colors.colors[var].shades.green = (uint8_t)((0x00ff00 & RGB_PALLET[var]) >> 8);
+    colors.colors[var].shades.blue = (uint8_t)((0x0000ff & RGB_PALLET[var]));
   }
-  if(rgbLedsInit(MAX_NUM_OF_LEDS, &htim4, TIM_CHANNEL_2)== STATUS_OK){
-	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-	  	  HAL_Delay(25);
-	  	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-	  	  HAL_Delay(25);
-	  	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-	  	  HAL_Delay(25);
-	  	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-	  	  HAL_Delay(25);
-	  	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-	  	  HAL_Delay(25);
-	  	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-	  	  HAL_Delay(25);
+  if (rgbLedsInit(MAX_NUM_OF_LEDS, &htim4, TIM_CHANNEL_2) == STATUS_OK)
+  {
+    HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+    HAL_Delay(25);
+    HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+    HAL_Delay(25);
+    HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+    HAL_Delay(25);
+    HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+    HAL_Delay(25);
+    HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+    HAL_Delay(25);
+    HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+    HAL_Delay(25);
   }
-  else{
-	  for(;;){
-	  	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-	  	  HAL_Delay(25);
-	  	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-	  	  HAL_Delay(25);
-	  	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-	  	  HAL_Delay(25);
-	  	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+  else
+  {
+    for (;;)
+    {
+      HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+      HAL_Delay(25);
+      HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+      HAL_Delay(25);
+      HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+      HAL_Delay(25);
+      HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 
-	  	  HAL_Delay(1000);
-	  }
+      HAL_Delay(1000);
+    }
   }
   rgbLedsMapColorToPwm(&colors);
   /* USER CODE END 2 */
@@ -152,17 +154,16 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-//  uint32_t colour = 0xff2828;  // colour code for some color
-//  WS2812_Send(colour);
+  //  uint32_t colour = 0xff2828;  // colour code for some color
+  //  WS2812_Send(colour);
 
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  rgbLedsStart();
-	  HAL_Delay(250);
-
+    rgbLedsStart();
+    HAL_Delay(250);
   }
   /* USER CODE END 3 */
 }
@@ -192,8 +193,7 @@ void SystemClock_Config(void)
   }
   /** Initializes the CPU, AHB and APB buses clocks
   */
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
-                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
@@ -261,7 +261,6 @@ static void MX_TIM4_Init(void)
 
   /* USER CODE END TIM4_Init 2 */
   HAL_TIM_MspPostInit(&htim4);
-
 }
 
 /**
@@ -277,7 +276,6 @@ static void MX_DMA_Init(void)
   /* DMA1_Channel4_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA1_Channel4_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(DMA1_Channel4_IRQn);
-
 }
 
 /**
@@ -303,7 +301,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LED_GPIO_Port, &GPIO_InitStruct);
-
 }
 
 /* USER CODE BEGIN 4 */
@@ -325,7 +322,7 @@ void Error_Handler(void)
   /* USER CODE END Error_Handler_Debug */
 }
 
-#ifdef  USE_FULL_ASSERT
+#ifdef USE_FULL_ASSERT
 /**
   * @brief  Reports the name of the source file and the source line number
   *         where the assert_param error has occurred.
