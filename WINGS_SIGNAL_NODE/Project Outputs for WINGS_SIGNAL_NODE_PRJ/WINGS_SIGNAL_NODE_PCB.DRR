@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: WINGS_SIGNAL_NODE_PCB.PcbDoc   8/16/2021  7:12:53 PM
+NCDrill File Report For: WINGS_SIGNAL_NODE_PCB.PcbDoc   8/16/2021  7:28:38 PM
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -7,11 +7,11 @@ ASCII RoundHoles File : WINGS_SIGNAL_NODE_PCB.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      12mil (0.3mm)                                             Round             767       PTH        0.00inch (0.00mm)
+T1      12mil (0.3mm)                                             Round             748       PTH        0.00inch (0.00mm)
 T2      24mil (0.6mm)                                             Round             4         PTH        0.00inch (0.00mm)
 T3      28mil (0.711mm)                                           Round             10        PTH        0.00inch (0.00mm)
 T4      126mil (3.2mm)                                            Round             4         PTH        0.00inch (0.00mm)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              785
+Totals                                                                              766
 
 Total Processing Time (hh:mm:ss) : 00:00:00
