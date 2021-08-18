@@ -9,11 +9,11 @@ Each node project in repository contains X categories of content as following :
 * Frimware (```Embedded C + assembly```)
 
 ## Prerequesties
-* GNU ARM
-* STM32Fxxx HAL
-* Altium Designer
-* STMCUBEMX
-* UAV-CAN
+* [GNU ARM](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm)
+* [STM32Fxxx HAL](https://www.st.com/en/embedded-software/stm32-embedded-software.html)
+* [Altium Designer](https://www.altium.com/products/downloads)
+* [STMCUBEMX](https://www.st.com/content/st_com/en/products/ecosystems/stm32-open-development-environment/stm32cube.html)
+* [UAV-CAN](https://github.com/uavcan)
 
 ## [Node](https://github.com/Ehsan2754/UAV-CAN-MODULES/tree/main/PATTERN-GENERATOR-NODE) Structures
 Each node directory can have the following structure:
