@@ -2,123 +2,14 @@
 FileName = WINGS_SIGNAL_NODE_PCB.GBR
 AutoAperture = True
 *************************************************************
-Generating : Top Layer
-      File : WINGS_SIGNAL_NODE_PCB.GTL
+Generating : Mechanical 1
+      File : WINGS_SIGNAL_NODE_PCB.GM1
 
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
+    Adding Layer      : Mechanical 1
 
 
 Used DCodes :
     D10
-    D17
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D39
-    D40
-    D67
-    D68
-    D69
-    D70
-    D71
-    D72
-    D73
-    D74
-    D75
-    D76
-    D77
-    D78
-    D79
-    D80
-    D81
-*************************************************************
-
-*************************************************************
-Generating : Bottom Layer
-      File : WINGS_SIGNAL_NODE_PCB.GBL
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D10
-    D17
-    D21
-    D22
-    D67
-    D69
-    D70
-    D71
-    D72
-    D74
-    D75
-    D79
-    D80
-    D81
-    D82
-    D83
-    D84
-    D85
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 16
-      File : WINGS_SIGNAL_NODE_PCB.GM16
-
-    Adding Layer      : Mechanical 16
-
-
-Used DCodes :
-    D11
-    D93
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 15
-      File : WINGS_SIGNAL_NODE_PCB.GM15
-
-    Adding Layer      : Mechanical 15
-
-
-Used DCodes :
-    D91
-    D93
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 13
-      File : WINGS_SIGNAL_NODE_PCB.GM13
-
-    Adding Layer      : Mechanical 13
-
-
-Used DCodes :
-    D10
-    D11
-    D91
-    D92
 *************************************************************
 
 *************************************************************
@@ -173,107 +64,6 @@ Used DCodes :
     D86
     D87
     D88
-*************************************************************
-
-*************************************************************
-Generating : Top Overlay
-      File : WINGS_SIGNAL_NODE_PCB.GTO
-
-    Adding Layer      : Top Overlay
-
-
-Used DCodes :
-    D10
-    D11
-    D12
-    D13
-    D14
-    D15
-    D16
-    D17
-*************************************************************
-
-*************************************************************
-Generating : Top Pad Master
-      File : WINGS_SIGNAL_NODE_PCB.GPT
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D39
-    D40
-    D68
-    D78
-    D79
-*************************************************************
-
-*************************************************************
-Generating : Bottom Pad Master
-      File : WINGS_SIGNAL_NODE_PCB.GPB
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D21
-    D22
-    D79
-    D82
-    D83
-    D85
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 1
-      File : WINGS_SIGNAL_NODE_PCB.GM1
-
-    Adding Layer      : Mechanical 1
-
-
-Used DCodes :
-    D10
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 4
-      File : WINGS_SIGNAL_NODE_PCB.GM4
-
-    Adding Layer      : Mechanical 4
-
-
-Used DCodes :
-    D10
-    D11
-    D15
-    D16
-    D89
-    D90
 *************************************************************
 
 *************************************************************
@@ -351,5 +141,105 @@ Used DCodes :
     D38
     D39
     D40
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : WINGS_SIGNAL_NODE_PCB.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : WINGS_SIGNAL_NODE_PCB.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D17
+    D21
+    D22
+    D67
+    D69
+    D70
+    D71
+    D72
+    D74
+    D75
+    D79
+    D80
+    D81
+    D82
+    D83
+    D84
+    D85
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : WINGS_SIGNAL_NODE_PCB.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
+    D76
+    D77
+    D78
+    D79
+    D80
+    D81
 *************************************************************
 

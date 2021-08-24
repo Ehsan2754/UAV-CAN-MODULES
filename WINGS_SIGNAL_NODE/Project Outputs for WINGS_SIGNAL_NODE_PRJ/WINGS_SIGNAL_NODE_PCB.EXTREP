@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: WINGS_SIGNAL_NODE_PCB.GBR   8/16/2021  7:29:35 PM
+Gerber File Extension Report For: WINGS_SIGNAL_NODE_PCB.GBR   23.08.2021  12:11:34
 ------------------------------------------------------------------------------------------
 
 
@@ -15,10 +15,4 @@ Layer Extension     Layer Description
 .GBP                Bottom Paste                            
 .GBO                Bottom Overlay                          
 .GM1                Mechanical 1                            
-.GM4                Mechanical 4                            
-.GM13               Mechanical 13                           
-.GM15               Mechanical 15                           
-.GM16               Mechanical 16                           
-.GPT                Top Pad Master                          
-.GPB                Bottom Pad Master                       
 ------------------------------------------------------------------------------------------
