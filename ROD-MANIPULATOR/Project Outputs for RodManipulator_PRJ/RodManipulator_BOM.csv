@@ -1,0 +1,35 @@
+ChipDip_Link,Designator,Quantity,Value,Package,Description,Instructions,HelpURL
+,,,,,,,
+,"C2, C12, C13",3,10uF,,Bipolar Capacitor,,
+,"C3, C4, C16",3,47u,1206 Murata Electronics,"Multilayer Ceramic Capacitor, GRM Series, 47 - F, - 10%, X5R, 10 V, 1206 [3216 Metric]",,
+,"C5, C7",2,0.1uF,,Bipolar Capacitor,,
+,"C6, C14, C15, C18",4,10nF,,Bipolar Capacitor,,
+,C8,1,1uF,,Bipolar Capacitor,,
+,"C9, C19",2,22nF,,Bipolar Capacitor,,
+,"C10, C11",2,100nF,,Bipolar Capacitor,,
+,C20,1,1nF,,Bipolar Capacitor,,
+https://www.chipdip.ru/product/sk56,D1,1,,DO-214 Littelfuse,???? ?????? 5? 60? [SMB / DO-214AA],,
+https://www.chipdip.ru/product/stm32f103t8u6-2,DD1,1,,VFQFPN-36,"STM32F103T8U6, ??????????????? 32BIT ARM 64K FLASH [VFQFPN-36]",,http://www.st.com/stonline/products/literature/ds/13587.pdf
+,J1,1,,,"Header, 3-Pin",,
+,J2,1,,Package Analog Devices,,,
+https://www.chipdip.ru/product/pls-2,J3,1,,,"Header, 2-Pin",,https://static.chipdip.ru/lib/227/DOC000227157.pdf
+https://www.chipdip.ru/product/ihlp2020bzer100m11-inductor-ihlp-smd-2020-10,L1,1,10uH,Nonstandard Vishay,10µH Shielded Molded Inductor 2.3A 199mOhm Max Nonstandard,,http://www.vishay.com/docs/34253/ihlp-2020bz-01.pdf
+,"LED1, LED2, LED3, LED4",4,,,,,
+,"R1, R9, R17, R21, R22, R28, R29",7,330R,,Resistor,,
+,R2,1,180K,,Resistor,,
+,"R3, R6",2,56K,,Resistor,,
+,"R4, R5, R7, R8, R13, R14, R18, R19, R20, R23",10,10K,,Resistor,,
+,"R11, R26",2,22K,,Resistor,,
+,R12,1,200K,,Resistor,,
+,"R15, R25",2,47K,,Resistor,,
+,R16,1,18K,,Resistor,,
+,R24,1,1K,,Resistor,,
+,R27,1,39K,,Resistor,,
+,R30,1,1.043R1W,,Resistor,,
+,SWD1,1,,None,Conn Shrouded Header HDR 4 POS 1.25mm Solder ST SMD Reel,Do not install,
+https://www.chipdip.ru/product1/8003455237,U1,1,3V3,SOT-23-5 Exar,"Low Dropout Voltage Regulator, Adjustable 0.5A, ?±1%, 2.5 to 16 Vin, 5-Pin SOT-23
+",,http://www.farnell.com/datasheets/2614478.pdf
+https://www.chipdip.ru/product1/8003448566,U2,1,,PowerSOIC-8 Texas Instruments,"LMR16030SDDAR, Conv DC-DC 4.3V to 60V Step Down Single-Out 1V to 50V 3A Automotive 8-Pin HSOP EP T/R",,https://www.ti.com/lit/ds/symlink/lmr16030.pdf
+https://www.chipdip.ru/product/qre1113gr-fairchild,"U3, U5",2,,,No Description Available,,
+,U4,1,,,No Description Available,,
+https://www.chipdip.ru/product1/8001783721,Y1,1,,SMD-3 Murata,Ceramic Resonator 8MHz ??0.5% _Tol_ ??0.2% _Stability_ 33pF 40Ohm 3-Pin CSMD T/R,,https://www.murata.com/en-eu/api/pdfdownloadapi?cate=&partno=CSTCE8M00G55-R0
