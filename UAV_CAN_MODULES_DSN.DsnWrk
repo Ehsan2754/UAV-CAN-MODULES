@@ -3,8 +3,8 @@ Version=1.0
 [Project1]
 ProjectPath=LIB\lib.LibPkg
 [Project2]
-ProjectPath=ROD-MANIPULATOR\RodManipulator_PRJ.PrjPcb
-[Project3]
 ProjectPath=PATTERN-GENERATOR-NODE\PATTERN-GENERATOR-NODE-PRJ.PrjPcb
+[Project3]
+ProjectPath=ROD-MANIPULATOR\RodManipulator_PRJ.PrjPcb
 [Project4]
 ProjectPath=WINGS_SIGNAL_NODE\WINGS_SIGNAL_NODE_PRJ.PrjPcb

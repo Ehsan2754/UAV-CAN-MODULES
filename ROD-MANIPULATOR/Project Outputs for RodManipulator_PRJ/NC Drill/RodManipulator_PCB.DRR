@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: RodManipulator_PCB.PcbDoc   26.08.2021  15:37:03
+NCDrill File Report For: RodManipulator_PCB.PcbDoc   8/31/2021  10:35:55 AM
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -7,9 +7,9 @@ ASCII RoundHoles File : RodManipulator_PCB.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.3mm (12mil)                                             Round             80        PTH        235.83mm (9.28inch)
-T2      0.6mm (24mil)                                             Round             4         PTH        3.75mm (0.15inch)
-T3      3.2mm (126mil)                                            Round             4         PTH        81.16mm (3.20inch)
+T1      0.3mm (12mil)                                             Round             80        PTH        0.00mm (0.00inch)
+T2      0.6mm (24mil)                                             Round             4         PTH        0.00mm (0.00inch)
+T3      3.2mm (126mil)                                            Round             4         PTH        0.00mm (0.00inch)
 ----------------------------------------------------------------------------------------------------------------------------------
 Totals                                                                              88
 

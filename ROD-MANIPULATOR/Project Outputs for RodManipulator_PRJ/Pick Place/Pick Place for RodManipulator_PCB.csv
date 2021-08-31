@@ -1,12 +1,12 @@
 Altium Designer Pick and Place Locations
-C:\altium workspace\UAV-CAN-MODULES\ROD-MANIPULATOR\Project Outputs for RodManipulator_PRJ\Pick Place\Pick Place for RodManipulator_PCB.csv
+C:\Workspace\UAV-CAN-MODULES\ROD-MANIPULATOR\Project Outputs for RodManipulator_PRJ\Pick Place\Pick Place for RodManipulator_PCB.csv
 
 ========================================================================================================================
 File Design Information:
 
-Date:       26.08.21
-Time:       15:37
-Revision:   a50c0e8f5865f864989591afd07efd5960769725
+Date:       31/08/21
+Time:       10:35
+Revision:   ceac5ac9de4c3e028d0db61b71add362809c4f9d
 Variant:    No variations
 Units used: mm
 
@@ -19,20 +19,20 @@ Units used: mm
 "C20","1nF","TopLayer","SMD_CAP_0603","56.9400","38.0000","270","Bipolar Capacitor"
 "C18","10nF","TopLayer","SMD_CAP_0603","60.6400","38.0000","270","Bipolar Capacitor"
 "R30","resistor","BottomLayer","RES2512","58.8604","33.7871","270","Resistor"
-"U1","SPX3819M5-L-3-3/TR","TopLayer","*SOT95P280X145-5N","42.0999","32.4461","90","Low Dropout Voltage Regulator, Adjustable 0.5A, В±1%, 2.5 to 16 Vin, 5-Pin SOT-23"
+"U1","SPX3819M5-L-3-3/TR","TopLayer","*SOT95P280X145-5N","42.0999","32.4461","90","Low Dropout Voltage Regulator, Adjustable 0.5A, ?±1%, 2.5 to 16 Vin, 5-Pin SOT-23"
 "R29","330R","TopLayer","RES_0603_(1608X06L)","54.7798","32.3965","180","Resistor"
 "R28","330R","TopLayer","RES_0603_(1608X06L)","54.7798","33.9018","180","Resistor"
 "R26","22K","TopLayer","RES_0603_(1608X06L)","66.5242","30.9850","0","Resistor"
 "R22","330R","TopLayer","RES_0603_(1608X06L)","62.9567","29.4953","180","Resistor"
 "LED4","LED","TopLayer","LED0603","66.6022","27.9534","180",""
 "LED3","LED","TopLayer","LED0603","62.8787","27.8078","0",""
-"DD1","STM32F103T8","TopLayer","*QFN50P600X600X100-37N","47.7376","33.7467","270","STM32F103T8U6, Микроконтроллер 32BIT ARM 64K FLASH [VFQFPN-36]"
+"DD1","STM32F103T8","TopLayer","*QFN50P600X600X100-37N","47.7376","33.7467","270","STM32F103T8U6, ??????????????? 32BIT ARM 64K FLASH [VFQFPN-36]"
 "J2","XT30-M","TopLayer","XT30-M_side","24.8100","33.5749","90",""
 "J3","PLS-2","TopLayer","HDR_Side_2_pin","70.0200","29.2338","90","Header, 2-Pin"
 "SWD1","SM04B-GHS-TB(LF)(SN)-","TopLayer","JST_4Pin-Trough","47.8553","28.1737","0","Conn Shrouded Header HDR 4 POS 1.25mm Solder ST SMD Reel"
 "R17","330R","TopLayer","RES_0603_(1608X06L)","66.5242","33.9643","0","Resistor"
 "C15","10nF","TopLayer","SMD_CAP_0603","66.5242","36.9437","180","Bipolar Capacitor"
-"D1","SK56","TopLayer","*SMB_P6SMB62AT3G(Primary)","36.3000","36.7200","180","Диод Шоттки 5А 60В [SMB / DO-214AA]"
+"D1","SK56","TopLayer","*SMB_P6SMB62AT3G(Primary)","36.3000","36.7200","180","???? ?????? 5? 60? [SMB / DO-214AA]"
 "Y1","CSTCE8M00G55-R0","TopLayer","*OSC_CSTCE8M00G55-R0","48.9879","39.4124","180","Ceramic Resonator 8MHz ??0.5% _Tol_ ??0.2% _Stability_ 33pF 40Ohm 3-Pin CSMD T/R"
 "U4","STSPIN250","TopLayer","VFQFPN-16","59.0103","33.7922","0","No Description Available"
 "U2","LMR16030SDDAR","TopLayer","*SOIC127P600X170-9N_-_duplicate","29.7000","33.8374","90","LMR16030SDDAR, Conv DC-DC 4.3V to 60V Step Down Single-Out 1V to 50V 3A Automotive 8-Pin HSOP EP T/R"
