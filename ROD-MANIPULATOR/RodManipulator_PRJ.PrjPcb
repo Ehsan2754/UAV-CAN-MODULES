@@ -114,7 +114,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document5]
-DocumentPath=Project Outputs for RodManipulator_PRJ\CAMtastic1.Cam
+DocumentPath=CAMtastic1.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -139,63 +139,71 @@ DocumentPath=Project Outputs for RodManipulator_PRJ\Pick Place\Pick Place for Ro
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for RodManipulator_PRJ\RodManipulator_BOM.csv
+DocumentPath=Project Outputs for RodManipulator_PRJ\Pick Place\Pick Place for RodManipulator_PCB.txt
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for RodManipulator_PRJ\NC Drill\RodManipulator_PCB.DRR
+DocumentPath=Project Outputs for RodManipulator_PRJ\RodManipulator_BOM.csv
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.EXTREP
+DocumentPath=Project Outputs for RodManipulator_PRJ\NC Drill\RodManipulator_PCB.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GBL
+DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GBO
+DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GBP
+DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GBS
+DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GM2
+DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GTL
+DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GM2
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GTO
+DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GTP
+DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GTS
+DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for RodManipulator_PRJ\NC Drill\RodManipulator_PCB.LDP
+DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.REP
+DocumentPath=Project Outputs for RodManipulator_PRJ\NC Drill\RodManipulator_PCB.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument17]
+DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.REP
+DItemRevisionGUID=
+
+[GeneratedDocument18]
 DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for RodManipulator_PRJ\NC Drill\RodManipulator_PCB.TXT
 DItemRevisionGUID=
 
 [Configuration1]

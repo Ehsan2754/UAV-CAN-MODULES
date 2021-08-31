@@ -31,7 +31,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
-OutputPath=
+OutputPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=1
@@ -97,7 +97,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document4]
-DocumentPath=Assembly.OutJob
+DocumentPath=Output.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -114,7 +114,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document5]
-DocumentPath=Fabrication.OutJob
+DocumentPath=CAMtastic1.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -131,83 +131,155 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.DRR
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\BOM\Bill of Materials-WINGS_SIGNAL_NODE_BOM.xlsx
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.EXTREP
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\Pick Place\Pick Place for WINGS_SIGNAL_NODE_PCB.csv
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GBL
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\Pick Place\Pick Place for WINGS_SIGNAL_NODE_PCB.txt
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GBO
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\NC Drill\WINGS_SIGNAL_NODE_PCB.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GBP
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GBS
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\Gerber\WINGS_SIGNAL_NODE_PCB.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GM1
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GM4
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\Gerber\WINGS_SIGNAL_NODE_PCB.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GM13
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GM15
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\Gerber\WINGS_SIGNAL_NODE_PCB.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GM16
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GPB
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\Gerber\WINGS_SIGNAL_NODE_PCB.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GPT
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GTL
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\Gerber\WINGS_SIGNAL_NODE_PCB.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GTO
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GTP
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GM1
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GTS
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\Gerber\WINGS_SIGNAL_NODE_PCB.GM2
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.LDP
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GM4
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.REP
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GM13
 DItemRevisionGUID=
 
 [GeneratedDocument20]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GM15
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GM16
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GPB
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GPT
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\Gerber\WINGS_SIGNAL_NODE_PCB.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\Gerber\WINGS_SIGNAL_NODE_PCB.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\Gerber\WINGS_SIGNAL_NODE_PCB.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\Gerber\WINGS_SIGNAL_NODE_PCB.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\NC Drill\WINGS_SIGNAL_NODE_PCB.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\Gerber\WINGS_SIGNAL_NODE_PCB.REP
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.REP
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\Gerber\WINGS_SIGNAL_NODE_PCB.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument37]
 DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\WINGS_SIGNAL_NODE_PCB.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument38]
+DocumentPath=Project Outputs for WINGS_SIGNAL_NODE_PRJ\NC Drill\WINGS_SIGNAL_NODE_PCB.TXT
 DItemRevisionGUID=
 
 [Configuration1]
@@ -251,6 +323,9 @@ DocumentReferenceClass2=DocumentReference
 OutputJobFileName2=Fabrication.OutJob
 ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
 ConfigurationType=Assembly
+
+[Generic_EDE]
+OutputDir=Project Outputs for WINGS_SIGNAL_NODE_PRJ
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -357,12 +432,42 @@ OutputName20=WireList Netlist
 OutputDocumentPath20=
 OutputVariantName20=
 OutputDefault20=0
+OutputType21=SIMetrixNetlist
+OutputName21=SIMetrix
+OutputDocumentPath21=
+OutputVariantName21=
+OutputDefault21=0
+OutputType22=SIMPLISNetlist
+OutputName22=SIMPLIS
+OutputDocumentPath22=
+OutputVariantName22=
+OutputDefault22=0
+OutputType23=XSpiceNetlist
+OutputName23=Mixed Sim Netlist
+OutputDocumentPath23=
+OutputVariantName23=
+OutputDefault23=0
 
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
 TargetPrinter=AnyDesk Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+OutputType1=AdvSimNetlist
+OutputName1=Mixed Sim
+OutputDocumentPath1=
+OutputVariantName1=
+OutputDefault1=0
+OutputType2=SIMetrixSimulation
+OutputName2=SIMetrix
+OutputDocumentPath2=
+OutputVariantName2=
+OutputDefault2=0
+OutputType3=SIMPLISSimulation
+OutputName3=SIMPLIS
+OutputDocumentPath3=
+OutputVariantName3=
+OutputDefault3=0
 
 [OutputGroup3]
 Name=Documentation Outputs
@@ -799,36 +904,6 @@ OutputName11=Specctra Design PCB
 OutputDocumentPath11=
 OutputVariantName11=
 OutputDefault11=0
-OutputType12=Ansoft Neutral
-OutputName12=Ansoft Neutral (AutoPCB)
-OutputDocumentPath12=
-OutputVariantName12=
-OutputDefault12=0
-OutputType13=HyperLynx
-OutputName13=HyperLynx (AutoPCB)
-OutputDocumentPath13=
-OutputVariantName13=
-OutputDefault13=0
-OutputType14=Orcad v7 Capture Design
-OutputName14=Orcad v7 Capture Design (AutoSCH)
-OutputDocumentPath14=
-OutputVariantName14=
-OutputDefault14=0
-OutputType15=P-CAD ASCII
-OutputName15=P-CAD ASCII (AutoPCB)
-OutputDocumentPath15=
-OutputVariantName15=
-OutputDefault15=0
-OutputType16=P-CAD V16 Schematic Design
-OutputName16=P-CAD V16 Schematic Design (AutoSCH)
-OutputDocumentPath16=
-OutputVariantName16=
-OutputDefault16=0
-OutputType17=SiSoft
-OutputName17=SiSoft (AutoPCB)
-OutputDocumentPath17=
-OutputVariantName17=
-OutputDefault17=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
