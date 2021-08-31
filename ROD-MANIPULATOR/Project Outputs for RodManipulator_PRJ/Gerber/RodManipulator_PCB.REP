@@ -2,6 +2,57 @@
 FileName = RodManipulator_PCB.GBR
 AutoAperture = True
 *************************************************************
+Generating : Top Paste
+      File : RodManipulator_PCB.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : RodManipulator_PCB.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D64
+    D65
+    D66
+*************************************************************
+
+*************************************************************
 Generating : Top Layer
       File : RodManipulator_PCB.GTL
 
@@ -63,90 +114,6 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Top Overlay
-      File : RodManipulator_PCB.GTO
-
-    Adding Layer      : Top Overlay
-
-
-Used DCodes :
-    D10
-    D11
-    D12
-    D13
-    D14
-    D15
-    D16
-    D17
-    D18
-*************************************************************
-
-*************************************************************
-Generating : Top Paste
-      File : RodManipulator_PCB.GTP
-
-    Adding Layer      : Top Paste
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-*************************************************************
-
-*************************************************************
-Generating : Bottom Paste
-      File : RodManipulator_PCB.GBP
-
-    Adding Layer      : Bottom Paste
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D64
-    D65
-    D66
-*************************************************************
-
-*************************************************************
-Generating : Bottom Overlay
-      File : RodManipulator_PCB.GBO
-
-    Adding Layer      : Bottom Overlay
-
-
-Used DCodes :
-    D10
-    D15
-    D16
-    D69
-*************************************************************
-
-*************************************************************
 Generating : Mechanical 2
       File : RodManipulator_PCB.GM2
 
@@ -154,6 +121,7 @@ Generating : Mechanical 2
 
 
 Used DCodes :
+    D70
 *************************************************************
 
 *************************************************************
@@ -210,5 +178,38 @@ Used DCodes :
     D64
     D67
     D68
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : RodManipulator_PCB.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : RodManipulator_PCB.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D10
+    D15
+    D16
+    D69
 *************************************************************
 

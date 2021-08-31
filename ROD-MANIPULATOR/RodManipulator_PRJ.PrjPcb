@@ -31,7 +31,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
-OutputPath=
+OutputPath=Project Outputs for RodManipulator_PRJ
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -114,7 +114,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document5]
-DocumentPath=CAMtastic1.Cam
+DocumentPath=CAM.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -203,7 +203,15 @@ DocumentPath=Project Outputs for RodManipulator_PRJ\Gerber\RodManipulator_PCB.RU
 DItemRevisionGUID=
 
 [GeneratedDocument19]
+DocumentPath=Project Outputs for RodManipulator_PRJ\ExportSTEP\RodManipulator_PCB.step
+DItemRevisionGUID=
+
+[GeneratedDocument20]
 DocumentPath=Project Outputs for RodManipulator_PRJ\NC Drill\RodManipulator_PCB.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for RodManipulator_PRJ\ReportHierarchy\RodManipulator_SCH.REP
 DItemRevisionGUID=
 
 [Configuration1]
@@ -248,7 +256,7 @@ Enabled1=True
 StartProcName=..\..\..\..\..\Ahuratus\Google Drive\workspace\UAVLab\lib\AltiumDesigner\2021-02-07_21-09-59\UL_Import.pas>
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for RodManipulator_PRJ
 
 [OutputGroup1]
 Name=Netlist Outputs
