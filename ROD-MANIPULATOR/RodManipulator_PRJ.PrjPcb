@@ -31,7 +31,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
-OutputPath=Project Outputs for RodManipulator_PRJ
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -256,7 +256,7 @@ Enabled1=True
 StartProcName=..\..\..\..\..\Ahuratus\Google Drive\workspace\UAVLab\lib\AltiumDesigner\2021-02-07_21-09-59\UL_Import.pas>
 
 [Generic_EDE]
-OutputDir=Project Outputs for RodManipulator_PRJ
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs

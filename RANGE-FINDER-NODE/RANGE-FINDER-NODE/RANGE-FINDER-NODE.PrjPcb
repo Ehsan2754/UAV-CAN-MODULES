@@ -31,7 +31,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
-OutputPath=
+OutputPath=Project Outputs for RANGE-FINDER-NODE
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -142,6 +142,191 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KBOLBPKM
 
+[Document7]
+DocumentPath=RANGE-FINDER-NODE-JOB.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Free Documents\BOM\Bill of Materials-RANGE-FINDER-NODE.xlsx
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\BOM\Bill of Materials-RANGE-FINDER-NODE.xlsx
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for Free Documents\BOM\BOM Checks Report-RANGE-FINDER-NODE-BOM.html
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\BOM\BOM Checks Report-RANGE-FINDER-NODE-BOM.html
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for Free Documents\Pick Place\Pick Place for RANGE-FINDER-NODE-PCB.txt
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Pick Place\Pick Place for RANGE-FINDER-NODE-PCB.txt
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for Free Documents\NC Drill\RANGE-FINDER-NODE-PCB.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\NC Drill\RANGE-FINDER-NODE-PCB.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for Free Documents\Gerber\RANGE-FINDER-NODE-PCB.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.GM2
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.GM4
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.GM13
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.GM15
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.GM16
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.GPB
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.GPT
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=Project Outputs for Free Documents\DRC\RANGE-FINDER-NODE-PCB.html
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\DRC\RANGE-FINDER-NODE-PCB.html
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=Project Outputs for Free Documents\NC Drill\RANGE-FINDER-NODE-PCB.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\NC Drill\RANGE-FINDER-NODE-PCB.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=Project Outputs for Free Documents\PCB 3D Print\RANGE-FINDER-NODE-PCB.png
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\PCB 3D Print\RANGE-FINDER-NODE-PCB.png
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=Project Outputs for Free Documents\Gerber\RANGE-FINDER-NODE-PCB.REP
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.REP
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=Project Outputs for Free Documents\Gerber\RANGE-FINDER-NODE-PCB.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\Gerber\RANGE-FINDER-NODE-PCB.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument37]
+DocumentPath=Project Outputs for Free Documents\ExportSTEP\RANGE-FINDER-NODE-PCB.step
+DItemRevisionGUID=
+
+[GeneratedDocument38]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\ExportSTEP\RANGE-FINDER-NODE-PCB.step
+DItemRevisionGUID=
+
+[GeneratedDocument39]
+DocumentPath=Project Outputs for Free Documents\NC Drill\RANGE-FINDER-NODE-PCB.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument40]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\NC Drill\RANGE-FINDER-NODE-PCB.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument41]
+DocumentPath=Project Outputs for Free Documents\EDIF\RANGE-FINDER-NODE.EDF
+DItemRevisionGUID=
+
+[GeneratedDocument42]
+DocumentPath=Project Outputs for RANGE-FINDER-NODE\EDIF\RANGE-FINDER-NODE.EDF
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
@@ -151,6 +336,9 @@ Variant=[No Variations]
 OutputJobsCount=0
 ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 ConfigurationType=Source
+
+[Generic_EDE]
+OutputDir=Project Outputs for RANGE-FINDER-NODE
 
 [OutputGroup1]
 Name=Netlist Outputs

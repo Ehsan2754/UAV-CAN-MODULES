@@ -1,0 +1,470 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+        h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+            padding: 0.3em;
+        }
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+        body {
+			font-family : segoe ui;
+        }
+
+        td, th {
+            padding: 0.5em;
+			text-align : left;
+			width: 10em;
+        }
+        th {
+			background-color : #EEEEEE;
+
+        }
+        th.column1, td.column1 {
+            text-align: left;
+            width : auto;
+        }
+        table {
+            width : 100%;
+			font-size: 0.9em;
+        }
+        
+        .DRC_summary_header {                           
+            padding-bottom : 0.1em;
+            border : 0px solid black;                           
+            width: 100%;
+			align: left;
+        }
+
+        .DRC_summary_header_col1, 
+        .DRC_summary_header_col2, 
+        .DRC_summary_header_col3  {
+            color : black;
+            font-size:100%;
+                        padding : 0em;
+            padding-top : 0.2em;
+            padding-bottom 0.2em;
+            border : 0px solid black;
+            vertical-align: top;
+			text-align: left;
+        }
+        
+        .DRC_summary_header_col1 {                              
+			font-weight: bold;
+			width: 8em;
+        }
+
+        .DRC_summary_header_col2 {       
+			width: 0.1em;
+		
+        }
+
+        .DRC_summary_header_col3 {       
+			width : auto;
+        }
+
+        .header_holder  {
+        Width = 100%;
+        border = 0px solid green;
+        padding = 0;
+        }
+        
+        
+        .front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+                {
+            left:0;
+            top:0;
+			padding: 0em;
+            padding-top : 0.1em;            
+            border : 0px solid black;
+            width : 100%;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .front_matter_column1 {
+            width : 8em;   
+			font-weight: bold;
+        }
+        
+        .front_matter_column2 {
+            width: 0.1em;
+        }
+
+        .front_matter_column3 {
+            width         : auto;  
+        }
+        
+        .total_column1, .total_column {
+            font-weight : bold;
+        }
+        .total_column1 {
+			text-align : left;
+        }
+        .warning, .error {
+            color : red;
+            font-weight : bold;
+        }
+        tr.onmouseout_odd {
+			background-color : #white;
+        }
+        tr.onmouseout_even { 
+			background-color : #FAFAFA;
+        }
+        tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+        } 
+        a:link, a:visited, .q a:link,.q a:active,.q {
+            color: #21489e; 
+        }
+        a:link.callback, a:visited.callback { 
+            color: #21489e; 
+        }
+        p.contents_level1 {
+            font-weight : bold;
+            font-size : 110%;
+            margin : 0.5em;
+        }
+        p.contents_level2 {
+            position : relative;
+            left : 20px;
+            margin : 0.5em;
+        }
+    </style><script type="text/javascript">
+        function coordToMils(coord) {
+            var number = coord / 10000;
+            
+            if (number != number.toFixed(3))
+                number = number.toFixed(3);
+
+            return number + 'mil'
+        }
+
+        function coordToMM(coord) {
+            var number = 0.0254 * coord / 10000;
+            
+            if (number != number.toFixed(4))
+                number = number.toFixed(4);
+            
+            return number + 'mm'
+        }
+    
+        function convertCoord(coordNode, units) {
+            for (var i = 0; i < coordNode.childNodes.length; i++) {
+                coordNode.removeChild(coordNode.childNodes[i]);
+            }
+
+            var coord = coordNode.getAttribute('value');
+            if (coord != null) {
+                if (units == 'mm') {
+                    textNode = document.createTextNode(coordToMM(coord));
+                    coordNode.appendChild(textNode);
+                } else if (units == 'mil') {
+                    textNode = document.createTextNode(coordToMils(coord));     
+                    coordNode.appendChild(textNode);    
+                }
+            }
+        }
+    
+        function convertUnits(unitNode, units) {
+            for (var i = 0; i < unitNode.childNodes.length; i++) {
+                unitNode.removeChild(unitNode.childNodes[i]);       
+            }
+        
+            textNode = document.createTextNode(units); 
+            unitNode.appendChild(textNode);
+        }
+    
+        function changeUnits(radio_input, units) {
+            if (radio_input.checked) {
+            
+                var elements = document.getElementsByName('coordinate');
+                if (elements) {
+                    for (var i = 0; i < elements.length; i++) {
+                        convertCoord(elements[i], units);
+                    }
+                }
+    
+                var elements = document.getElementsByName('units');
+                if (elements) {
+                    for (var i = 0; i < elements.length; i++) {
+                        convertUnits(elements[i], units);
+                    }
+                }
+            }
+        }
+    </script></head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD21\Templates\AD_logo.png
+        "><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">9/2/2021</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2:30:42 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc" class="file"><acronym title="C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc">C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">44</td></tr>
+</table>
+</td>
+</table><a name="IDIGZAO5KYTSNUEHHUMHA2JANGVJNFSKAK42GD0BP31DAUPZGLT2I"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCA2H3OSMD32ZK5PLCASZYCUA3LDDVQNVZUWAN1KY0W455QLX1IGM">Clearance Constraint (Gap=0.17mm) (All),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGOK0MI40YM0PKA10ASA3WOMTFHLH5GPRKSZWAVOWW0NDFURM2MNC">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2SQLIZ112RCBPE43C3YQG000GD0CYWTLEQBIVCIWD34W0TDNSJ0">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYDTULCOLHIHKMEEDXL3OYF32VERLBWWENSIBF3MV2NYQQJUJ5ISE">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDCVIXGYUPMELDIVAQZI0J4ZY2NJ3VEBRD4FR5NRSLJTTDN4AD5O">Width Constraint (Min=0.17mm) (Max=5mm) (Preferred=0.2mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDPKXSK53CNF1LOB2IX0JFF4YMMPADJT1I31TLPXFASNBVYWKYLIPH">Hole Size Constraint (Min=0.3mm) (Max=4.5mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPMN4YSL4RPN3JOFTUGLLNMM1GSV5JS5ECNGPBFYAU00ZWHR1V4P">Hole To Hole Clearance (Gap=0.4mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEO000YTXLNBLCBY0G5YWLGY2BMCAEWTOF2QTV4HHFK5PDBF0RFQO">Minimum Solder Mask Sliver (Gap=0.15mm) (All),(All)</a></td>
+<td class="column2">6</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOX2ZQEA01KPXJKIO2ILCMKTIGLU4I4LVGLQFPHO1GSJA54NIIB">Silk To Solder Mask (Clearance=0mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLJO4CK32EVDKM4H04OJFK31FDIRBRWIWLVQ4LBM3OO55X2WYZ4V">Silk to Silk (Clearance=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDRQCKYRZIENSFE4Q3MGYZOCGIDINMOY2Z0XAUIKMQVQAUBSLYJACL">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNRID24KOIKBLF0DN2EHACA2502CN5A3ECFZ2UNKZPR3ZADC5MWF">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJQ0GFL4AQDW4BKAMPGMOWXWROKGHAPZMZZDBYXKP4B4ZR0UAXT2G">Matched Lengths(Tolerance=0.3mm) (All)</a></td>
+<td class="column2">33</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRRGFEPE4WV0FESVDF4GMUVNI0J5AU15PQIKX5TDNKYTP3LMARFPN">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">44</td>
+</tr>
+</table><br><a name="IDCA2H3OSMD32ZK5PLCASZYCUA3LDDVQNVZUWAN1KY0W455QLX1IGM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=0.17mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=528.666mil|Location2.X=536.609mil|Location1.Y=885.674mil|Location2.Y=893.617mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=528.666mil|Location2.X=536.609mil|Location1.Y=885.674mil|Location2.Y=893.617mil|Absolute=True">Clearance Constraint: (0.15mm &lt; 0.17mm) Between Region (0 hole(s)) Bottom Layer And Track (13.354mm,21.947mm)(13.354mm,23.237mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDEO000YTXLNBLCBY0G5YWLGY2BMCAEWTOF2QTV4HHFK5PDBF0RFQO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.15mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1106.422mil|Location2.X=1113.578mil|Location1.Y=546.028mil|Location2.Y=553.184mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1106.422mil|Location2.X=1113.578mil|Location1.Y=546.028mil|Location2.Y=553.184mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.05mm &lt; 0.15mm) Between Pad SWD1-1(28.194mm,13.335mm) on Bottom Layer And Pad SWD1-2(28.194mm,14.585mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.05mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1106.422mil|Location2.X=1113.578mil|Location1.Y=644.454mil|Location2.Y=651.61mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1106.422mil|Location2.X=1113.578mil|Location1.Y=644.454mil|Location2.Y=651.61mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.05mm &lt; 0.15mm) Between Pad SWD1-3(28.194mm,15.835mm) on Bottom Layer And Pad SWD1-4(28.194mm,17.085mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.05mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=536.934mil|Location2.X=544.872mil|Location1.Y=741.383mil|Location2.Y=749.391mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=536.934mil|Location2.X=544.872mil|Location1.Y=741.383mil|Location2.Y=749.391mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.071mm &lt; 0.15mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.071mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=666.855mil|Location2.X=674.793mil|Location1.Y=871.304mil|Location2.Y=879.313mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=666.855mil|Location2.X=674.793mil|Location1.Y=871.304mil|Location2.Y=879.313mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.071mm &lt; 0.15mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.071mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=527.092mil|Location2.X=535.1mil|Location1.Y=870.522mil|Location2.Y=878.46mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=527.092mil|Location2.X=535.1mil|Location1.Y=870.522mil|Location2.Y=878.46mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.071mm &lt; 0.15mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.071mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=657.013mil|Location2.X=665.021mil|Location1.Y=740.601mil|Location2.Y=748.538mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=657.013mil|Location2.X=665.021mil|Location1.Y=740.601mil|Location2.Y=748.538mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.071mm &lt; 0.15mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.071mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDNRID24KOIKBLF0DN2EHACA2502CN5A3ECFZ2UNKZPR3ZADC5MWF"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=870.577mil|Location2.X=885.538mil|Location1.Y=1113.591mil|Location2.Y=1124.684mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=870.577mil|Location2.X=885.538mil|Location1.Y=1113.591mil|Location2.Y=1124.684mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.172mm &lt; 0.25mm) Between Board Edge And Track (22.186mm,27.343mm)(22.186mm,28.293mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=317.744mil|Location2.X=332.642mil|Location1.Y=1112.114mil|Location2.Y=1123.206mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=317.744mil|Location2.X=332.642mil|Location1.Y=1112.114mil|Location2.Y=1123.206mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.2mm &lt; 0.25mm) Between Board Edge And Track (8.286mm,27.343mm)(8.286mm,28.243mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=319.909mil|Location2.X=334.807mil|Location1.Y=1113.699mil|Location2.Y=1124.791mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=319.909mil|Location2.X=334.807mil|Location1.Y=1113.699mil|Location2.Y=1124.791mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.178mm &lt; 0.25mm) Between Board Edge And Track (8.286mm,28.243mm)(8.336mm,28.293mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=870.577mil|Location2.X=885.538mil|Location1.Y=1113.591mil|Location2.Y=1124.684mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=870.577mil|Location2.X=885.538mil|Location1.Y=1113.591mil|Location2.Y=1124.684mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.172mm &lt; 0.25mm) Between Board Edge And Track (8.336mm,28.293mm)(22.186mm,28.293mm) on Top Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDJQ0GFL4AQDW4BKAMPGMOWXWROKGHAPZMZZDBYXKP4B4ZR0UAXT2G"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Matched Lengths(Tolerance=0.3mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=134.063mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=134.063mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net 3.3 And Net GND Length:81.244mm is not within 0.3mm tolerance of Length:192.039mm (110.495mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1138.937mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1138.937mil|Absolute=True">Matched Net Lengths: Between Net 5V And Net GND Length:73.44mm is not within 0.3mm tolerance of Length:192.039mm (118.299mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net ADC_5V And Net GND Length:29.75mm is not within 0.3mm tolerance of Length:192.039mm (161.989mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=63.283mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=63.283mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net ADC_VIN And Net GND Length:25.616mm is not within 0.3mm tolerance of Length:192.039mm (166.123mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net BOOT0 And Net GND Length:10.533mm is not within 0.3mm tolerance of Length:192.039mm (181.207mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net CAN_N And Net GND Length:26.626mm is not within 0.3mm tolerance of Length:192.039mm (165.113mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net CAN_P And Net GND Length:8.558mm is not within 0.3mm tolerance of Length:192.039mm (183.181mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1144.937mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1144.937mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net CAN_RXD And Net GND Length:39.058mm is not within 0.3mm tolerance of Length:192.039mm (152.681mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net CAN_TXD And Net GND Length:36.002mm is not within 0.3mm tolerance of Length:192.039mm (155.737mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net FB And Net GND Length:8.777mm is not within 0.3mm tolerance of Length:192.039mm (182.962mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net INT Length:14.178mm is not within 0.3mm tolerance of Length:192.039mm (177.561mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net LED Length:15.764mm is not within 0.3mm tolerance of Length:192.039mm (175.976mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net MISO Length:0mm is not within 0.3mm tolerance of Length:192.039mm (191.739mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net MOSI Length:0mm is not within 0.3mm tolerance of Length:192.039mm (191.739mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net NetC1_1 Length:22.981mm is not within 0.3mm tolerance of Length:192.039mm (168.759mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net NetC1_2 Length:6.004mm is not within 0.3mm tolerance of Length:192.039mm (185.735mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=23.284mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=23.284mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net NetC6_2 Length:12.448mm is not within 0.3mm tolerance of Length:192.039mm (179.292mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net NetD2_A Length:2.208mm is not within 0.3mm tolerance of Length:192.039mm (189.532mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net NetR2_2 Length:4.892mm is not within 0.3mm tolerance of Length:192.039mm (186.847mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net NetU1_3 Length:0mm is not within 0.3mm tolerance of Length:192.039mm (191.739mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net NSS0 Length:0mm is not within 0.3mm tolerance of Length:192.039mm (191.739mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net NSS1 Length:0mm is not within 0.3mm tolerance of Length:192.039mm (191.739mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net OSC_IN Length:28.653mm is not within 0.3mm tolerance of Length:192.039mm (163.086mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net OSC_OUT Length:28.654mm is not within 0.3mm tolerance of Length:192.039mm (163.086mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net SCK Length:0mm is not within 0.3mm tolerance of Length:192.039mm (191.739mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net SCL Length:18.583mm is not within 0.3mm tolerance of Length:192.039mm (173.156mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net SDA Length:16.374mm is not within 0.3mm tolerance of Length:192.039mm (175.366mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net STM_NRST Length:11.159mm is not within 0.3mm tolerance of Length:192.039mm (180.58mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net SWDIO Length:12.329mm is not within 0.3mm tolerance of Length:192.039mm (179.41mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net SWLK Length:13.081mm is not within 0.3mm tolerance of Length:192.039mm (178.658mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net VERSION Length:19.732mm is not within 0.3mm tolerance of Length:192.039mm (172.007mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=108.063mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1139.937mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=108.063mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1139.937mil|Absolute=True">Matched Net Lengths: Between Net GND And Net Vin Length:57.291mm is not within 0.3mm tolerance of Length:192.039mm (134.448mm short) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Workspace\UAV-CAN-MODULES\RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE-PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.669mil|Location2.X=1133.622mil|Location1.Y=54.063mil|Location2.Y=1127.953mil|Absolute=True">Matched Net Lengths: Between Net GND And Net XSHUT Length:8.439mm is not within 0.3mm tolerance of Length:192.039mm (183.3mm short) </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
