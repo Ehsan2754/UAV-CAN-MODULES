@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: RANGE-FINDER-NODE-PCB.GBR   9/2/2021  2:20:36 PM
+Gerber File Extension Report For: RANGE-FINDER-NODE-PCB.GBR   9/3/2021  11:42:34 AM
 ------------------------------------------------------------------------------------------
 
 
@@ -14,12 +14,5 @@ Layer Extension     Layer Description
 .GBS                Bottom Solder                           
 .GBP                Bottom Paste                            
 .GBO                Bottom Overlay                          
-.GM1                Mechanical 1                            
 .GM2                Mechanical 2                            
-.GM4                Mechanical 4                            
-.GM13               Mechanical 13                           
-.GM15               Mechanical 15                           
-.GM16               Mechanical 16                           
-.GPT                Top Pad Master                          
-.GPB                Bottom Pad Master                       
 ------------------------------------------------------------------------------------------
