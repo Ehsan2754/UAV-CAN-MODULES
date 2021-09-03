@@ -2,17 +2,6 @@
 FileName = RANGE-FINDER-NODE-PCB.GBR
 AutoAperture = True
 *************************************************************
-Generating : Mechanical 2
-      File : RANGE-FINDER-NODE-PCB.GM2
-
-    Adding Layer      : Mechanical 2
-
-
-Used DCodes :
-    D12
-*************************************************************
-
-*************************************************************
 Generating : Bottom Overlay
       File : RANGE-FINDER-NODE-PCB.GBO
 
@@ -32,25 +21,18 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Bottom Paste
-      File : RANGE-FINDER-NODE-PCB.GBP
+Generating : Top Overlay
+      File : RANGE-FINDER-NODE-PCB.GTO
 
-    Adding Layer      : Bottom Paste
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
+    Adding Layer      : Top Overlay
 
 
 Used DCodes :
-    D50
-    D52
-    D54
-    D55
-    D56
-    D57
-    D58
-    D59
+    D10
+    D11
+    D12
+    D13
+    D14
 *************************************************************
 
 *************************************************************
@@ -108,6 +90,59 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
+Generating : Top Layer
+      File : RANGE-FINDER-NODE-PCB.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D47
+    D48
+    D49
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : RANGE-FINDER-NODE-PCB.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D50
+    D52
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+*************************************************************
+
+*************************************************************
 Generating : Top Paste
       File : RANGE-FINDER-NODE-PCB.GTP
 
@@ -137,18 +172,14 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Top Overlay
-      File : RANGE-FINDER-NODE-PCB.GTO
+Generating : Mechanical 2
+      File : RANGE-FINDER-NODE-PCB.GM2
 
-    Adding Layer      : Top Overlay
+    Adding Layer      : Mechanical 2
 
 
 Used DCodes :
-    D10
-    D11
     D12
-    D13
-    D14
 *************************************************************
 
 *************************************************************
@@ -174,36 +205,5 @@ Used DCodes :
     D57
     D58
     D59
-*************************************************************
-
-*************************************************************
-Generating : Top Layer
-      File : RANGE-FINDER-NODE-PCB.GTL
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D10
-    D15
-    D16
-    D17
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D47
-    D48
-    D49
 *************************************************************
 

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: RANGE-FINDER-NODE-PCB.PcbDoc   9/3/2021  11:42:34 AM
+NCDrill File Report For: RANGE-FINDER-NODE-PCB.PcbDoc   03.09.2021  12:30:31
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -7,9 +7,9 @@ ASCII RoundHoles File : RANGE-FINDER-NODE-PCB.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.3mm (12mil)                                             Round             63        PTH        0.00mm (0.00inch)
-T2      2.2mm (87mil)                                             Round             2         PTH        0.00mm (0.00inch)
+T1      0.3mm (12mil)                                             Round             63        PTH        185.47mm (7.30inch)
+T2      2.2mm (87mil)                                             Round             2         PTH        19.63mm (0.77inch)
 ----------------------------------------------------------------------------------------------------------------------------------
 Totals                                                                              65
 
-Total Processing Time (hh:mm:ss) : 00:00:00
+Total Processing Time (hh:mm:ss) : 00:00:01
