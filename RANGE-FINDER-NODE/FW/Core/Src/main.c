@@ -135,13 +135,12 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	VL53L0X_PerformSingleRangingMeasurement (Dev, & RangingData);
+
 	lcd_clear();
 	lcd_put_cur(0,0);
 	lcd_send_string("VL53L0X POLLING");
 	 	  if (RangingData.RangeStatus == 0)
 	 	  {
-
-
 	 		 sprintf ((char *) msg, "D=% i", RangingData.RangeMilliMeter);
 	 		 lcd_put_cur(1,0);
 	 		 lcd_send_string(msg);
@@ -150,6 +149,7 @@ int main(void)
 	 		 lcd_put_cur(1,0);
 	 		 lcd_send_string("ERROR");
 	 	  }
+	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 	 	  HAL_Delay(100);
   }
   /* USER CODE END 3 */
@@ -173,7 +173,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
+  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL8;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -234,11 +234,22 @@ static void MX_I2C1_Init(void)
   */
 static void MX_GPIO_Init(void)
 {
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : LED_Pin */
+  GPIO_InitStruct.Pin = LED_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(LED_GPIO_Port, &GPIO_InitStruct);
 
 }
 
