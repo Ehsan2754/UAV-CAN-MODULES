@@ -10,3 +10,7 @@ ProjectPath=ROD-MANIPULATOR\RodManipulator_PRJ.PrjPcb
 ProjectPath=WINGS_SIGNAL_NODE\WINGS_SIGNAL_NODE_PRJ.PrjPcb
 [Project5]
 ProjectPath=RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE.PrjPcb
+[Project6]
+ProjectPath=LIDAR_CAN_MODULE\UAVCAN LIDAR.PrjPcb
+[Project7]
+ProjectPath=UCN-LV-master\UCN LV.PrjPcb
