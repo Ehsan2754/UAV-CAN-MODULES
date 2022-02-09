@@ -15,7 +15,7 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=UWB-NODE.OutJob
+Name=TankNode-OutJon.OutJob
 Description=
 TargetOutputMedium=Folder Structure
 VariantName=[No Variations]
@@ -118,7 +118,7 @@ Configuration5_Item8=Line #=54|Comment=52|Description=82|Designator=80|Manufactu
 [PublishSettings]
 OutputFilePath2=C:\altium workspace\UAVCAN-Sniffer-STM-Programmer\Project Outputs for CAN_SNIFFER\Output.PDF
 ReleaseManaged2=1
-OutputBasePath2=Project Outputs for UWB-NODE
+OutputBasePath2=Project Outputs for TankNode-PrjPCB
 OutputPathMedia2=
 OutputPathMediaValue2=
 OutputPathOutputer2=[Output Type]
@@ -143,9 +143,9 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=C:\Workspace\UAV-CAN-MODULES\UWB-node\Project Outputs for UWB-NODE\
+OutputFilePath3=C:\Workspace\UAV-CAN-MODULES\TankNode\Project Outputs for TankNode-PrjPCB\
 ReleaseManaged3=1
-OutputBasePath3=Project Outputs for UWB-NODE
+OutputBasePath3=Project Outputs for TankNode-PrjPCB
 OutputPathMedia3=
 OutputPathMediaValue3=
 OutputPathOutputer3=[Output Type]
@@ -158,7 +158,7 @@ OutputFileNameSpecial3=
 OpenOutput3=0
 OutputFilePath4=
 ReleaseManaged4=1
-OutputBasePath4=Project Outputs for UWB-NODE
+OutputBasePath4=Project Outputs for TankNode-PrjPCB
 OutputPathMedia4=
 OutputPathMediaValue4=
 OutputPathOutputer4=[Output Type]
@@ -197,7 +197,7 @@ WmvQuality4=80
 [GeneratedFilesSettings]
 RelativeOutputPath2=C:\altium workspace\UAVCAN-Sniffer-STM-Programmer\Project Outputs for CAN_SNIFFER\Output.PDF
 OpenOutputs2=1
-RelativeOutputPath3=C:\Workspace\UAV-CAN-MODULES\UWB-node\Project Outputs for UWB-NODE\
+RelativeOutputPath3=C:\Workspace\UAV-CAN-MODULES\TankNode\Project Outputs for TankNode-PrjPCB\
 OpenOutputs3=0
 AddToProject3=1
 TimestampFolder3=0
