@@ -2,54 +2,6 @@
 FileName = Linear Actuator V3.1_PcbDoc.GBR
 AutoAperture = True
 *************************************************************
-Generating : Top 3D Body
-      File : Linear Actuator V3.1_PcbDoc.GM2
-
-    Adding Layer      : Top 3D Body
-
-
-Used DCodes :
-    D12
-*************************************************************
-
-*************************************************************
-Generating : Bottom Overlay
-      File : Linear Actuator V3.1_PcbDoc.GBO
-
-    Adding Layer      : Bottom Overlay
-
-
-Used DCodes :
-    D10
-    D11
-    D12
-    D13
-    D14
-    D96
-    D97
-    D98
-*************************************************************
-
-*************************************************************
-Generating : Bottom Paste
-      File : Linear Actuator V3.1_PcbDoc.GBP
-
-    Adding Layer      : Bottom Paste
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D85
-    D86
-    D87
-    D88
-    D89
-*************************************************************
-
-*************************************************************
 Generating : Bottom Solder
       File : Linear Actuator V3.1_PcbDoc.GBS
 
@@ -115,41 +67,32 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Top Paste
-      File : Linear Actuator V3.1_PcbDoc.GTP
+Generating : Mechanical 2
+      File : Linear Actuator V3.1_PcbDoc.GM2
 
-    Adding Layer      : Top Paste
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
+    Adding Layer      : Mechanical 2
 
 
 Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D39
-    D40
-    D41
+    D72
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : Linear Actuator V3.1_PcbDoc.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D96
+    D97
+    D98
 *************************************************************
 
 *************************************************************
@@ -250,5 +193,62 @@ Used DCodes :
     D82
     D83
     D84
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : Linear Actuator V3.1_PcbDoc.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D85
+    D86
+    D87
+    D88
+    D89
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : Linear Actuator V3.1_PcbDoc.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
 *************************************************************
 

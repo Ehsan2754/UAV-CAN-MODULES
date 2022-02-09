@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: UWB-NODE.GBR   2/9/2022  5:00:48 PM
+Gerber File Extension Report For: UWB-NODE.GBR   2/9/2022  5:14:44 PM
 ------------------------------------------------------------------------------------------
 
 
@@ -14,4 +14,5 @@ Layer Extension     Layer Description
 .GBS                Bottom Solder                           
 .GBP                Bottom Paste                            
 .GBO                Bottom Overlay                          
+.GM2                Mechanical 2                            
 ------------------------------------------------------------------------------------------
