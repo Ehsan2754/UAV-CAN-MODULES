@@ -5,12 +5,10 @@ ProjectPath=LIB\lib.LibPkg
 [Project2]
 ProjectPath=PATTERN-GENERATOR-NODE\PATTERN-GENERATOR-NODE-PRJ.PrjPcb
 [Project3]
-ProjectPath=ROD-MANIPULATOR\RodManipulator_PRJ.PrjPcb
+ProjectPath=Linear Actuator V3.1\Linear Actuator V3.1.PrjPcb
 [Project4]
-ProjectPath=WINGS_SIGNAL_NODE\WINGS_SIGNAL_NODE_PRJ.PrjPcb
+ProjectPath=TankNode\TankNode-PrjPCB.PrjPcb
 [Project5]
-ProjectPath=RANGE-FINDER-NODE\RANGE-FINDER-NODE\RANGE-FINDER-NODE.PrjPcb
+ProjectPath=UWB-node\UWB-NODE.PrjPcb
 [Project6]
-ProjectPath=LIDAR_CAN_MODULE\UAVCAN LIDAR.PrjPcb
-[Project7]
-ProjectPath=UCN-LV-master\UCN LV.PrjPcb
+ProjectPath=USB-UART\USB-UART.PrjPcb

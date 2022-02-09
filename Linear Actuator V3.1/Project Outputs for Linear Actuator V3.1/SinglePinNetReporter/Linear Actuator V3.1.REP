@@ -1,0 +1,15 @@
+------------------------------------------------------------
+Single Pin Net Report for Linear Actuator V3.1.PrjPcb
+-- 2/8/2022
+-- 1:04:33 PM
+------------------------------------------------------------
+
+Net VERSION has only one pin (Pin DD1-16)
+Net SDA/PWM4B has only one pin (Pin DD1-34)
+Net SCL/PWM4A has only one pin (Pin DD1-33)
+Net PWM3C has only one pin (Pin DD1-15)
+Net PWM3B has only one pin (Pin DD1-32)
+Net PWM2C has only one pin (Pin DD1-9)
+Net NetU1_3 has only one pin (Pin U1-3)
+Net MOSI/ADC_MID has only one pin (Pin DD1-14)
+Net MISO/ADC_VC has only one pin (Pin DD1-13)

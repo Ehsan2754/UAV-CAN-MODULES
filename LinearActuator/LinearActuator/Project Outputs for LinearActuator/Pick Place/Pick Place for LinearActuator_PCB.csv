@@ -1,0 +1,40 @@
+Altium Designer Pick and Place Locations
+C:\Workspace\UAV-CAN-MODULES\LinearActuator\LinearActuator\Project Outputs for LinearActuator\Pick Place\Pick Place for LinearActuator_PCB.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       14/01/22
+Time:       17:55
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
+"Designator","Comment","Layer","Footprint","Center-X(mm)","Center-Y(mm)","Rotation","Description"
+"JS1","JumperSMD 3Pin","TopLayer","JumperSMD_3Pin","59.8777","12.4421","180",""
+"C7","1uF","TopLayer","SMD_CAP_0603","27.8864","12.6927","180","Bipolar Capacitor"
+"C6","100nF","TopLayer","SMD_CAP_0603","27.8864","10.8385","180","Bipolar Capacitor"
+"C5","1uF","TopLayer","SMD_CAP_0603","55.9026","13.4039","180","Bipolar Capacitor"
+"P2","Connector","TopLayer","PH_Connector_2Pin","47.9852","19.3146","0",""
+"Y1","CSTCE8M00G55-R0","TopLayer","*OSC_CSTCE8M00G55-R0","24.8384","5.8347","0","Ceramic Resonator 8MHz ??0.5% _Tol_ ??0.2% _Stability_ 33pF 40Ohm 3-Pin CSMD T/R"
+"U3","ATmega8-16PU","TopLayer","28P3","19.7838","12.2355","90","8-bit AVR Microcontroller, 4.5-5.5V, 16MHz, 8KB Flash, 512 Bytes EEPROM, 1KB SRAM, 28-pin PDIP, Industrial Grade (-40°C to 85°C)"
+"U2","L293D","TopLayer","STM-L293D-16","48.1302","12.2855","90","Push-Pull Four Channel Driver with Diode, 4.5 to 36 V, -40 to 150 degC, 16-Pin PDIP, RoHS, Tube"
+"U1","78M05","TopLayer","TO220-AB-Stand","63.3702","12.4133","270",""
+"R6","10K","TopLayer","Res-(1/4)","19.3774","21.8621","0","Resistor"
+"R5","330R","TopLayer","Res-(1/4)","24.7566","3.3455","180","Resistor"
+"R4","10K","TopLayer","Res-(1/4)","19.3774","19.9290","0","Resistor"
+"R3","10K","TopLayer","Res-(1/4)","19.3774","17.9959","180","Resistor"
+"R2","330R","TopLayer","Res-(1/4)","22.0444","11.2449","0","Resistor"
+"R1","330R","TopLayer","Res-(1/4)","22.0444","13.2769","0","Resistor"
+"Q2","CNY70","BottomLayer","FP-6_544-5062_01-4-MFG","5.7630","12.5605","90","SENSOR OPTO TRANS 5MM REFLTH PCB"
+"Q1","CNY70","BottomLayer","FP-6_544-5062_01-4-MFG","13.8656","12.5605","90","SENSOR OPTO TRANS 5MM REFLTH PCB"
+"P5","Connector","TopLayer","Polarized_Header_4","6.8954","4.3869","0",""
+"P4","Connector","TopLayer","Polarized_Header_4","6.9054","20.1495","180",""
+"P3","Connector","TopLayer","Polarized_Header_5","30.5338","20.1795","180",""
+"P1","Connector","TopLayer","PH_Connector_2Pin","47.9852","5.2759","180",""
+"J1","XT30-M","TopLayer","XT30-M_side","76.4004","12.5541","270",""
+"D1","LED1","TopLayer","LED-1","31.4678","4.5393","0","Typical RED GaAs LED"
+"C4","100nF","TopLayer","SMD_CAP_0603","55.9026","11.2703","180","Bipolar Capacitor"
+"C3","220uf,25V","TopLayer","CAPE_R3.5","69.9970","8.0191","90","220uf,25V"
+"C2","470uF,50V","TopLayer","CAPE_R3.5","69.9488","16.7339","270","470uF,50V"
+"C1","100nF","TopLayer","SMD_CAP_0603","63.8372","19.6523","180","Bipolar Capacitor"

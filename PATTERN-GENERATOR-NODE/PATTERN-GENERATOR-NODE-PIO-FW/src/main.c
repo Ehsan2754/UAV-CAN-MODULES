@@ -33,7 +33,7 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define SIDECOLOR 0xff0000
-#define MAINCOLOR 0x0000ff
+#define MAINCOLOR 0xff0000
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -163,6 +163,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
     rgbLedsStart();
+    HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
     HAL_Delay(250);
   }
   /* USER CODE END 3 */
