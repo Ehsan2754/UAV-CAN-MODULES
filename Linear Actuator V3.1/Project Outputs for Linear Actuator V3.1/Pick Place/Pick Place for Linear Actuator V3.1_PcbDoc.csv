@@ -1,0 +1,63 @@
+Altium Designer Pick and Place Locations
+C:\Workspace\UAV-CAN-MODULES\Linear Actuator V3.1\Project Outputs for Linear Actuator V3.1\Pick Place\Pick Place for Linear Actuator V3.1_PcbDoc.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       09/02/22
+Time:       15:56
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
+"Designator","Comment","Layer","Footprint","Center-X(mm)","Center-Y(mm)","Rotation","Description"
+"R18","resistor","BottomLayer","RES2512","100.4000","45.3700","90","Resistor"
+"U4","QRE1113GR","BottomLayer","SMD4_2P90X3P60_ONS","72.6000","46.5200","180","No Description Available"
+"U3","QRE1113GR","BottomLayer","SMD4_2P90X3P60_ONS","72.6000","42.4300","180","No Description Available"
+"J1","PLS-6","BottomLayer","HDR_Side_6_pin","135.1300","44.8440","270","PLS-6 (DS1021-1x6), ????? ???????? 2.54?? 1x6 ?????? ???1"
+"C10","GX035C104MAT2-500","TopLayer","*CAPC1608X90","97.4600","49.9800","0","Cap Thin Film 0.1uf 50v 0603"
+"C9","GX035C104MAT2-500","TopLayer","*CAPC1608X90","100.5400","49.9800","180","Cap Thin Film 0.1uf 50v 0603"
+"U6","ZXCT1022","TopLayer","SOT23-5","112.9750","48.2300","180",""
+"U5","DRV8837DSGR","TopLayer","FP-DSG0008A-MFG","106.0100","49.2300","180","IC MOTOR DRIVER PAR 8WSON"
+"R17","10K","TopLayer","RES_0603_(1608X06L)","74.0222","45.1333","0","Resistor"
+"R16","330R","TopLayer","RES_0603_(1608X06L)","74.7222","48.9350","180","Resistor"
+"R15","10K","TopLayer","RES_0603_(1608X06L)","74.0222","46.4500","0","Resistor"
+"R14","10K","TopLayer","RES_0603_(1608X06L)","74.0222","43.8167","0","Resistor"
+"R13","10K","TopLayer","RES_0603_(1608X06L)","74.0222","42.5000","180","Resistor"
+"R6","330R","TopLayer","RES_0603_(1608X06L)","74.7222","50.4750","180","Resistor"
+"Y1","CSTCE8M00G55-R0","TopLayer","*OSC_CSTCE8M00G55-R0","76.5900","44.1803","270","Ceramic Resonator 8MHz ??0.5% _Tol_ ??0.2% _Stability_ 33pF 40Ohm 3-Pin CSMD T/R"
+"U2","TJA1042","TopLayer","SOT782-1","90.4000","44.1803","180","1/1 Transceiver Half CANbus 8-SO"
+"U1","SPX3819M5-L-3-3/TR","TopLayer","*SOT95P280X145-5N","94.5700","41.4300","180","Low Dropout Voltage Regulator, Adjustable 0.5A, ?±1%, 2.5 to 16 Vin, 5-Pin SOT-23"
+"SWD1","BM04B-GHS-TBT(LF)(SN)(N)","BottomLayer","JST_BM04B-GHS-holes","84.4500","49.8988","180","Conn Shrouded Header HDR 4 POS 1.25mm Solder ST SMD Reel"
+"R12","10K","TopLayer","RES_0603_(1608X06L)","123.3322","42.0700","180","Resistor"
+"R11","180K","TopLayer","RES_0603_(1608X06L)","123.3322","40.4400","0","Resistor"
+"R10","Res3","TopLayer","J1-0603","90.4167","39.1800","0","Resistor"
+"R9","Res3","TopLayer","J1-0603","90.4167","41.8300","0","120 Ohms 1 0.1 W 1 10 W Chip Resistor 0603 1608 Metric Thick Film"
+"R8","RC0603FR-0710KL","TopLayer","J1-0603","102.7400","39.3100","180","10 kOhms 1 0.1 W 1 10 W Chip Resistor 0603 1608 Metric Thick Film"
+"R7","RC0603FR-0710KL","TopLayer","J1-0603","76.5765","47.3500","0","10 kOhms 1 0.1 W 1 10 W Chip Resistor 0603 1608 Metric Thick Film"
+"R5","RC0603FR-0710KL","TopLayer","J1-0603","77.0765","50.4500","0","10 kOhms 1 0.1 W 1 10 W Chip Resistor 0603 1608 Metric Thick Film"
+"R4","RC0603FR-0710KL","TopLayer","J1-0603","99.7400","39.3100","180","10 kOhms 1 0.1 W 1 10 W Chip Resistor 0603 1608 Metric Thick Film"
+"DD1","STM32F103T8","TopLayer","*QFN50P600X600X100-37N","82.7400","44.1803","0","STM32F103T8U6, ??????????????? 32BIT ARM 64K FLASH [VFQFPN-36]"
+"D1","0603-LED-BLUE","TopLayer","*LEDM1608X80_LTE-C1906R-14(Primary)","93.8500","39.3350","180","LED IrLED Chip LED 2-Pin SMD T/R"
+"CAN-AP1","SM04B-GHS-TB(LF)(SN)-","TopLayer","JST_SM04B-GHS-TB(LF)(SN)-","132.2435","44.2170","90","Connector Header Surface Mount, Right Angle 4 position 0.049 _1.25mm_"
+"CAN1","502585-0670","TopLayer","MOLEX_502585-0670","130.6200","44.1853","90","1.50mm Pitch, CLIK-Mate PCB Receptacle, Single Row, Surface Mount, Right-Angle, Tin Plating, Positive Lock, 6 Circuits, Natural"
+"C8","GX035C104MAT2-500","TopLayer","*CAPC1608X90","90.4167","40.5200","180","Cap Thin Film 0.1uf 50v 0603"
+"C7","GX035C104MAT2-500","TopLayer","*CAPC1608X90","90.4900","46.5500","0","Cap Thin Film 0.1uf 50v 0603"
+"C6","GX035C104MAT2-500","TopLayer","*CAPC1608X90","85.0050","39.4100","180","Cap Thin Film 0.1uf 50v 0603"
+"C5","GX035C104MAT2-500","TopLayer","*CAPC1608X90","85.0050","38.0600","180","Cap Thin Film 0.1uf 50v 0603"
+"C4","GX035C104MAT2-500","TopLayer","*CAPC1608X90","79.7565","50.4000","0","Cap Thin Film 0.1uf 50v 0603"
+"C3","GX035C104MAT2-500","TopLayer","*CAPC1608X90","79.7530","49.0100","0","Cap Thin Film 0.1uf 50v 0603"
+"C2","GX035C104MAT2-500","TopLayer","*CAPC1608X90","96.9300","39.3100","180","Cap Thin Film 0.1uf 50v 0603"
+"C1","GX035C104MAT2-500","TopLayer","*CAPC1608X90","97.2900","41.4300","90","Cap Thin Film 0.1uf 50v 0603"
+"U1","LMR16030SDDAR","TopLayer","*SOIC127P600X170-9N_-_duplicate","117.9370","43.5610","180","LMR16030SDDAR, Conv DC-DC 4.3V to 60V Step Down Single-Out 1V to 50V 3A Automotive 8-Pin HSOP EP T/R"
+"R3","RC0603FR-0710KL","TopLayer","J1-0603","109.7980","45.2503","0","10 kOhms 1 0.1 W 1 10 W Chip Resistor 0603 1608 Metric Thick Film"
+"R2","Res3","TopLayer","J1-0603","109.7980","47.3170","180","Resistor"
+"R1","Res3","TopLayer","J1-0603","115.5770","47.3170","180","Resistor"
+"L1","IHLP2020BZER100M01","TopLayer","IHLP","100.6010","44.3068","270","10ÂµH Shielded Molded Inductor 2.3A 199mOhm Max Nonstandard"
+"D1","SK56","TopLayer","*SMB_P6SMB62AT3G(Primary)","106.0110","44.2170","270","???? ?????? 5? 60? [SMB / DO-214AA]"
+"C6","GRM31CR61A476KE15L","TopLayer","*CAPC3216X125N","96.4860","45.6505","90","Multilayer Ceramic Capacitor, GRM Series, 47 - F, - 10%, X5R, 10 V, 1206 [3216 Metric]"
+"C5","GRM31CR61A476KE15L","TopLayer","*CAPC3216X125N","93.8190","45.6505","90","Multilayer Ceramic Capacitor, GRM Series, 47 - F, - 10%, X5R, 10 V, 1206 [3216 Metric]"
+"C4","GX035C104MAT2-500","TopLayer","*CAPC1608X90","109.9480","41.1670","180","Cap Thin Film 0.1uf 50v 0603"
+"C3","GRM188R71C105KA12D","TopLayer","CAPC1608X90N","109.9130","43.1987","0","SMD Capacitor X7R(EIA) with Capacitance: 1.0uF Tol. 10%. Rated Voltage: 16Vdc"
+"C2","GRM31CR71H225KA88L","TopLayer","*CAP3216X125N","125.5690","45.7470","90","1206 2.2 uF 50 V ?±10% Tolerance X7R SMT Multilayer Ceramic Capacitor"
+"C1","GRM31CR71H225KA88L","TopLayer","*CAP3216X125N","123.0290","45.7470","90","1206 2.2 uF 50 V ?±10% Tolerance X7R SMT Multilayer Ceramic Capacitor"
