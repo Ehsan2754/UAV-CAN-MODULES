@@ -1,12 +1,12 @@
 Altium Designer Pick and Place Locations
-C:\Workspace\UAV-CAN-MODULES\TankNode\Project Outputs for TankNode-PrjPCB\Pick Place\Pick Place for TankNode-PcbDoc.csv
+C:\altium workspace\UAV-CAN-MODULES\TankNode\Project Outputs for TankNode-PrjPCB\Pick Place\Pick Place for TankNode-PcbDoc.csv
 
 ========================================================================================================================
 File Design Information:
 
-Date:       09/02/22
-Time:       17:16
-Revision:   94a65b35257f1251fa3389f3976bc97c2189aa87
+Date:       10.02.22
+Time:       10:39
+Revision:   4b0dbe1cff32d1e8c9529ca49a24371210d49fdd
 Variant:    No variations
 Units used: mm
 
@@ -55,7 +55,7 @@ Units used: mm
 "T1.10","touchpad","BottomLayer","TANKSENSOR","91.7360","117.4040","0",""
 "Y1","CSTCE8M00G55-R0","TopLayer","*OSC_CSTCE8M00G55-R0","135.4202","125.4300","180","Ceramic Resonator 8MHz ??0.5% _Tol_ ??0.2% _Stability_ 33pF 40Ohm 3-Pin CSMD T/R"
 "U2","TJA1042","TopLayer","SOT782-1","135.4202","111.6200","90","1/1 Transceiver Half CANbus 8-SO"
-"U1","SPX3819M5-L-3-3/TR","TopLayer","*SOT95P280X145-5N","132.6700","107.4500","90","Low Dropout Voltage Regulator, Adjustable 0.5A, ?±1%, 2.5 to 16 Vin, 5-Pin SOT-23"
+"U1","SPX3819M5-L-3-3/TR","TopLayer","*SOT95P280X145-5N","132.6700","107.4500","90","Low Dropout Voltage Regulator, Adjustable 0.5A, В±1%, 2.5 to 16 Vin, 5-Pin SOT-23"
 "SWD1","BM04B-GHS-TBT(LF)(SN)(N)","BottomLayer","JST_BM04B-GHS-holes","141.6387","117.5700","90","Conn Shrouded Header HDR 4 POS 1.25mm Solder ST SMD Reel"
 "R12","10K","TopLayer","RES_0603_(1608X06L)","131.5100","79.2878","90","Resistor"
 "R11","180K","TopLayer","RES_0603_(1608X06L)","132.9100","79.2878","270","Resistor"
@@ -65,7 +65,7 @@ Units used: mm
 "R7","RC0603FR-0710KL","TopLayer","J1-0603","138.5900","125.4435","270","10 kOhms 1 0.1 W 1 10 W Chip Resistor 0603 1608 Metric Thick Film"
 "R5","RC0603FR-0710KL","TopLayer","J1-0603","141.6900","125.4435","270","10 kOhms 1 0.1 W 1 10 W Chip Resistor 0603 1608 Metric Thick Film"
 "R4","RC0603FR-0710KL","TopLayer","J1-0603","130.5500","102.2800","90","10 kOhms 1 0.1 W 1 10 W Chip Resistor 0603 1608 Metric Thick Film"
-"DD1","STM32F103T8","TopLayer","*QFN50P600X600X100-37N","135.4202","119.2800","270","STM32F103T8U6, ??????????????? 32BIT ARM 64K FLASH [VFQFPN-36]"
+"DD1","STM32F103T8","TopLayer","*QFN50P600X600X100-37N","135.4202","119.2800","270","STM32F103T8U6, Микроконтроллер 32BIT ARM 64K FLASH [VFQFPN-36]"
 "D1","0603-LED-BLUE","TopLayer","*LEDM1608X80_LTE-C1906R-14(Primary)","130.5750","108.1700","90","LED IrLED Chip LED 2-Pin SMD T/R"
 "CAN-AP1","SM04B-GHS-TB(LF)(SN)-","TopLayer","JST_SM04B-GHS-TB(LF)(SN)-","122.4315","79.8034","0","Connector Header Surface Mount, Right Angle 4 position 0.049 _1.25mm_"
 "CAN1","502585-0670","TopLayer","MOLEX_502585-0670","122.4668","81.6269","0","1.50mm Pitch, CLIK-Mate PCB Receptacle, Single Row, Surface Mount, Right-Angle, Tin Plating, Positive Lock, 6 Circuits, Natural"
@@ -81,11 +81,11 @@ Units used: mm
 "R3","RC0603FR-0710KL","TopLayer","J1-0603","136.4903","92.2220","270","10 kOhms 1 0.1 W 1 10 W Chip Resistor 0603 1608 Metric Thick Film"
 "R2","Res3","TopLayer","J1-0603","138.3570","92.2220","90","Resistor"
 "R1","Res3","TopLayer","J1-0603","138.5570","86.4430","90","Resistor"
-"L1","IHLP2020BZER100M01","TopLayer","IHLP","135.4467","101.4190","180","10ВµH Shielded Molded Inductor 2.3A 199mOhm Max Nonstandard"
-"D1","SK56","TopLayer","*SMB_P6SMB62AT3G(Primary)","135.3570","96.0090","180","???? ?????? 5? 60? [SMB / DO-214AA]"
+"L1","IHLP2020BZER100M01","TopLayer","IHLP","135.4467","101.4190","180","10AµH Shielded Molded Inductor 2.3A 199mOhm Max Nonstandard"
+"D1","SK56","TopLayer","*SMB_P6SMB62AT3G(Primary)","135.3570","96.0090","180","Диод Шоттки 5А 60В [SMB / DO-214AA]"
 "C6","GRM31CR61A476KE15L","TopLayer","*CAPC3216X125N","136.8905","105.5340","0","Multilayer Ceramic Capacitor, GRM Series, 47 - F, - 10%, X5R, 10 V, 1206 [3216 Metric]"
 "C5","GRM31CR61A476KE15L","TopLayer","*CAPC3216X125N","136.8905","108.2010","0","Multilayer Ceramic Capacitor, GRM Series, 47 - F, - 10%, X5R, 10 V, 1206 [3216 Metric]"
 "C4","GX035C104MAT2-500","TopLayer","*CAPC1608X90","132.4070","92.0720","90","Cap Thin Film 0.1uf 50v 0603"
 "C3","GRM188R71C105KA12D","TopLayer","CAPC1608X90N","134.4387","92.1070","270","SMD Capacitor X7R(EIA) with Capacitance: 1.0uF Tol. 10%. Rated Voltage: 16Vdc"
-"C2","GRM31CR71H225KA88L","TopLayer","*CAP3216X125N","136.9870","76.4510","0","1206 2.2 uF 50 V ?±10% Tolerance X7R SMT Multilayer Ceramic Capacitor"
-"C1","GRM31CR71H225KA88L","TopLayer","*CAP3216X125N","136.9870","78.9910","0","1206 2.2 uF 50 V ?±10% Tolerance X7R SMT Multilayer Ceramic Capacitor"
+"C2","GRM31CR71H225KA88L","TopLayer","*CAP3216X125N","136.9870","76.4510","0","1206 2.2 uF 50 V В±10% Tolerance X7R SMT Multilayer Ceramic Capacitor"
+"C1","GRM31CR71H225KA88L","TopLayer","*CAP3216X125N","136.9870","78.9910","0","1206 2.2 uF 50 V В±10% Tolerance X7R SMT Multilayer Ceramic Capacitor"

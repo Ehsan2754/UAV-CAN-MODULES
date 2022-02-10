@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: UWB-NODE.PcbDoc   2/9/2022  5:14:46 PM
+NCDrill File Report For: UWB-NODE.PcbDoc   10.02.2022  10:45:38
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -7,10 +7,10 @@ ASCII RoundHoles File : UWB-NODE.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.3mm (12mil)                                             Round             237       PTH        0.00mm (0.00inch)
-T2      0.5mm (20mil)                                             Round             12        PTH        0.00mm (0.00inch)
-T3      0.6mm (24mil)                                             Round             4         PTH        0.00mm (0.00inch)
-T4      3.1mm (122mil)                                            Round             3         PTH        0.00mm (0.00inch)
+T1      0.3mm (12mil)                                             Round             237       PTH        562.23mm (22.14inch)
+T2      0.5mm (20mil)                                             Round             12        PTH        52.04mm (2.05inch)
+T3      0.6mm (24mil)                                             Round             4         PTH        3.75mm (0.15inch)
+T4      3.1mm (122mil)                                            Round             3         PTH        67.60mm (2.66inch)
 ----------------------------------------------------------------------------------------------------------------------------------
 Totals                                                                              256
 

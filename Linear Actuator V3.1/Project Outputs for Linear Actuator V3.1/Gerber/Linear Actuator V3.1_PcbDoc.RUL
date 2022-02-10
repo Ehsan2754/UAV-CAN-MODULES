@@ -1,4 +1,4 @@
-DRC Rules Export File for PCB: C:\Workspace\UAV-CAN-MODULES\Linear Actuator V3.1\Linear Actuator V3.1_PcbDoc.PcbDoc
+DRC Rules Export File for PCB: C:\altium workspace\UAV-CAN-MODULES\Linear Actuator V3.1\Linear Actuator V3.1_PcbDoc.PcbDoc
 RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
 RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=3.94
 RuleKind=Width|RuleName=Width|Scope=Board|Minimum=6.69

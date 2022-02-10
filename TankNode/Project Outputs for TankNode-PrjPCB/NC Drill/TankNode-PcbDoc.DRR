@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: TankNode-PcbDoc.PcbDoc   2/9/2022  5:16:17 PM
+NCDrill File Report For: TankNode-PcbDoc.PcbDoc   10.02.2022  10:39:06
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -7,10 +7,10 @@ ASCII RoundHoles File : TankNode-PcbDoc.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.3mm (12mil)                                             Round             331       PTH        0.00mm (0.00inch)
-T2      0.5mm (20mil)                                             Round             18        PTH        0.00mm (0.00inch)
-T3      0.6mm (24mil)                                             Round             4         PTH        0.00mm (0.00inch)
-T4      3.1mm (122mil)                                            Round             4         PTH        0.00mm (0.00inch)
+T1      0.3mm (12mil)                                             Round             331       PTH        790.47mm (31.12inch)
+T2      0.5mm (20mil)                                             Round             18        PTH        182.92mm (7.20inch)
+T3      0.6mm (24mil)                                             Round             4         PTH        3.75mm (0.15inch)
+T4      3.1mm (122mil)                                            Round             4         PTH        211.62mm (8.33inch)
 ----------------------------------------------------------------------------------------------------------------------------------
 Totals                                                                              357
 
